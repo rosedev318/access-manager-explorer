@@ -33,8 +33,6 @@ interface Props {
   onNavigate?: (entity: EntityInstance) => void;
 }
 
-const DEMO_MANAGER = "0x4ee69a1703b717cb46cd12c71c6fe225f646ba1e";
-
 const Content: FC<Props> = ({ onNavigate = () => {} }) => {
   const [open, setOpen] = useState(true);
   const { address, isConnected } = useAccount();
